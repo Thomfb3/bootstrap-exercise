@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Bootstrap Exercise</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand flex-grow" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+
+                    </div>
+                    <a class="nav-item nav-link" href="#">Messages<span class="badge badge-success ml-1">12</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid m-2">
+        <h1>Dashboard:</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">All Star</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Steph</th>
+                    <td>Warriors</td>
+                    <td>Yes</td>
+                    <td><span class="badge badge-danger p-2"><i class="fas fa-trash-alt"></i></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Lebron</th>
+                    <td>Cavaliers</td>
+                    <td>Yes</td>
+                    <td><span class="badge badge-danger p-2"><i class="fas fa-trash-alt"></i></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Dwayne</th>
+                    <td>Heat</td>
+                    <td>Yes</td>
+                    <td><span class="badge badge-danger p-2"><i class="fas fa-trash-alt"></i></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Kobe</th>
+                    <td>Lakers</td>
+                    <td>Yes <span class="badge badge-warning">Last</span></td>
+                    <td><span class="badge badge-danger p-2"><i class="fas fa-trash-alt"></i></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Isaiah</th>
+                    <td>Celtics</td>
+                    <td>Yes <span class="badge badge-success">First</span></td>
+                    <td><span class="badge badge-danger p-2"><i class="fas fa-trash-alt"></i></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>Actions:</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+        title="Tooltip on top">Tooltip on top</button>
+        <button type="button" class="btn btn-warning" data-toggle="popover" title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?">
+            Click to toggle popover
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        This a modal!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Todos:</h2>
+        <div class="alert alert-success m-0" role="alert">Feel good about Bootstrap</div>
+        <div class="alert alert-info m-0" role="alert">Feel informed about Bootstrap</div>
+        <div class="alert alert-warning m-0" role="alert">Feel warned about Bootstrap</div>
+        <div class="alert alert-warning m-0" role="alert">Maybe I should read the docs...</div>
+        <div class="alert alert-danger m-0" role="alert">Danger zone</div>
+        <div class="alert alert-danger m-0 mb-3" role="alert">I really should read the docs...</div>
+
+        <a class="p-2" href="index.html">Home</a>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
